@@ -1,0 +1,29 @@
+int cifreImpare(int n)
+{
+    int S = 0, sz = 1;
+    bool van = false;
+    
+    while (n)
+    {
+        if (n % 10 % 2 == 0)
+        {
+            S += (n % 10) * sz;
+            sz *= 10;
+            n /= 10;
+        }
+        else
+        {
+            van = true;
+            n /= 10;
+        }
+
+    }
+    if (S != 0 && van == true)
+    {
+        return S;
+    }
+    else
+    {
+        return -1;
+    }
+}
