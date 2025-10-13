@@ -1,0 +1,24 @@
+int DivImpar (int a, int b) {
+    int S = -1;
+    if (a < b)
+    {
+        for (int i = 1; i <= a; i++)
+        {
+            if (a % i == 0 && b % i == 0 && i % 2 == 1)
+            {
+                S = i;
+            }
+        }
+    }
+    else
+    {
+        for (int i = 1; i <= b; i++)
+        {
+            if (b % i == 0 && a % i == 0 && i % 2 == 1)
+            {
+                S = i;
+            }
+        }
+    }
+    return S;
+}
