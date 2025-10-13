@@ -1,0 +1,39 @@
+int majImp(int a, int b)
+{
+    int i, j, S = -1, ps, pn;
+
+    for (i = a; i <= b; i++)
+    {
+        ps = 0;
+        pn = 0;
+
+        for (j = 2; j < i; j++)
+        {
+            if (i % j == 0)
+            {
+                if (j % 2 == 0)
+                {
+                    ps += j;
+                }
+                else
+                {
+                    pn += j;
+                }
+            }
+        }
+        if (pn > ps && S < i)
+        {
+            S = i;
+            return S;
+        }
+    }
+
+    if (S == -1)
+    {
+        return 0;
+    }
+    else
+    {
+        return S;
+    }
+}
