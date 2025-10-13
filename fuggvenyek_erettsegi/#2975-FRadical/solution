@@ -1,0 +1,29 @@
+#include <cmath>
+void FRadical (int n, int& x, int& y)
+{
+    x = 1;
+    y = 1;
+    int t[1000000] = {0}, p = 1;
+    while (n != 1)
+    {
+        p++;
+        while (n % p == 0)
+        {
+            n /= p;
+            t[p]++;
+        }
+    }
+    for (int i = 2; i <= p; i++)
+    {
+        if (t[i] % 2 == 1)
+        {
+            y *= i;
+            t[i]-1;
+            x *= pow (i, t[i]/2);
+        }
+        else
+        {
+            x *= pow (i, t[i]/2);
+        }
+    }
+}
