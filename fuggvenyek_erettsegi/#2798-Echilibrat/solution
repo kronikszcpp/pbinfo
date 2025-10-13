@@ -1,0 +1,25 @@
+int echilibrat(int n)
+{
+    int ps = 0, pn = 0, i = 0;
+    while (n)
+    {
+        if (i % 2 == 0)
+        {
+            ps += n % 10;
+        }
+        else
+        {
+            pn += n % 10;
+        }
+        i++;
+        n /= 10;
+    }
+    if (ps % 2 == 0 && pn % 2 == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
