@@ -1,0 +1,32 @@
+#include <cmath>
+int NrPrime(int n)
+{
+    bool prime;
+    int S = 0, x;
+    while (n)
+    {
+        x = n % 10;
+        prime = true;
+        if (x == 2)
+        {
+            S++;
+        }
+        if (x > 2)
+        {
+        for (int i = 2; i <= sqrt(x) && prime == true; i++)
+        {
+            if (x % i == 0)
+            {
+                prime = false;
+            }
+        }
+        if (prime == true)
+        {
+            S++;
+        }
+        }
+
+        n /= 10;
+    }
+    return S;
+}
