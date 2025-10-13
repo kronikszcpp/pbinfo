@@ -1,0 +1,23 @@
+#include <cmath>
+int interval(int n){
+    bool prime;
+    int x, sz = 0;
+    x = n;
+    while (sz < 1)
+    {
+        prime = true;
+        for (int i = 2; i <= sqrt(x) && prime == true; i++)
+        {
+            if (x % i == 0)
+            {
+                prime = false;
+            }
+        }
+        if (prime == true)
+        {
+            sz++;
+        }
+        x++;
+    }
+    return x;
+}
