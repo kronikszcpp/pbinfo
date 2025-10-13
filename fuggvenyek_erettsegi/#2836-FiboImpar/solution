@@ -1,0 +1,18 @@
+int Fibo(int n){
+    int x1 = 1, x2 = 1, x3 = 3;
+    if (n <= 2)
+    {
+        return 1;
+    }
+    for (int i = 3; i <= n; )
+    {
+        x3 = x1 + x2;
+        if (x3 % 2 == 1)
+        {
+            i++;
+        }
+        x1 = x2;
+        x2 = x3;
+    }
+    return x3;
+}
