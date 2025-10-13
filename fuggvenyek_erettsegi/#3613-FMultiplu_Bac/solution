@@ -1,0 +1,20 @@
+int multiplu(int n)
+{
+    int S, sz = 1;
+    bool negyzete = false;
+    
+    while (negyzete == false)
+    {
+        S = n * sz;
+        if ((int)sqrt(S) == sqrt(S))
+        {
+            negyzete = true;
+        }
+        else
+        {
+            sz++;
+        }
+    }
+
+    return S;
+}
