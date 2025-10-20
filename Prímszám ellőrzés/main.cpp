@@ -4,8 +4,6 @@ using namespace std;
 
 bool primszam_ellenorzes(int n)
 {
-    bool primszame;
-
     for (int i = 2; i <= sqrt(n); i++)
     {
         if (n % i == 0)
