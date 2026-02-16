@@ -1,1 +1,2 @@
-> ### "A másolás egy döntés amit nem a feltöltő, hanem a másoló hoz meg"
+# Professzionális c++ megoldások
+> "A másolás egy döntés amit nem a feltöltő, hanem a másoló hoz meg"
