@@ -1,0 +1,32 @@
+1: 	t.p=t.a+t.b+t.c;
+2: d.aria=d.a*d.b;
+3: cin>>x.a>>x.b;
+4: cout<<x.a<<” ”<<x.b;
+5: struct {float media;
+ int varsta;} x;
+6: struct {int cod;
+ float media;} x;
+7: struct punct{float ox,oy;} x;
+8: struct fractie {int n1,n2;} x;
+9: ev.data_nasterii.an = 1998;
+10: e1=e2+1;
+11: 300
+12: cout<<x.nume[0];
+13: p.nume[0]
+14: m=(x.nota1+x.nota2)/2;
+15: p.x=7;
+16: struct carte{ int val;char nume[21];} t;
+17: struct carte{int nr; char titlu[21];} t;
+18: x.re
+19: e.dn.zi
+20: p.denumire[0]
+21: p.nume[0]
+22: m.denumire[0]
+23: e.nume[0]
+24: m=(var1.nota+var2.nota)/2;
+25: char
+26: (p.x==0)&&(p.y==0)
+27: p.x*p.y==0
+28: (p.x>1)&&(p.x<4)&&(p.y>1)&&(p.y<3)
+29: p.x>0
+30: P.y==0
