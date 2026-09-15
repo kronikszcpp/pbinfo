@@ -83,16 +83,6 @@ int main () {
                 aktualisPozicio = lepesek[aktualisLepeszszam];
             }
         }
-        /*if (kesz)
-        {
-            for (int j = 1; j <= ln; ++j)
-            {
-                if (pontPont[aktualisPozicio][j] == 1 && bejarva[1][j] == 0)
-                {
-                    kesz = false;
-                }
-            }
-        }*/
     }
     for (int i = 1; i <= ln; ++i)
     {
