@@ -4,8 +4,8 @@
 #include <algorithm>
 #include <stack>
 using namespace std;
-ifstream fin("input.in");
-ofstream fout("output.out");
+ifstream fin("RANDI.BE");
+ofstream fout("RANDI.KI");
 int N, E, A, R, M, szomszedsagiLista[150][150] = {0};
 int adamSzulo[150] = {0}, evaSzulo[150] = {0};
 bool adamBejarasa[150] = {false}, evaBejarasa[150] = {false};
