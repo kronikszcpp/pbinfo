@@ -73,6 +73,7 @@ int main ()
         }
     }
     int G = -1;
+    int max_index = -1;
     for (int i = 1; i < S; ++i)
     {
         int g = 0;
@@ -86,12 +87,13 @@ int main ()
         if (g > G)
         {
             G = g;
+            max_index = i;
         }
     }
     fout << G << endl;
     for (int i = 1; i <= n; ++i)
     {
-        if (bejarva[i] == G)
+        if (bejarva[i] == max_index)
         {
             fout << i << ' ';
         }
