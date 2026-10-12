@@ -4,13 +4,13 @@
 #include <queue>
 using namespace std;
 ifstream fin("Barlang.be");
-ofstream fout("Barlang.be");
+ofstream fout("Barlang.ki");
 int n, m, bejarva[250] = {0}, szomszedsagiLista[250][250] = {0}, S = 1;
 queue<int> sor;
 void BFS(int X)
 {
     bejarva[X] = S;
-    sor.push(S);
+    sor.push(X);
     while (!sor.empty())
     {
         int sz;
@@ -20,7 +20,7 @@ void BFS(int X)
         {
             if (bejarva[szomszedsagiLista[sz][i]] == 0)
             {
-                bejarva[szomszedsagiLista[sz][i]] == S;
+                bejarva[szomszedsagiLista[sz][i]] = S;
                 sor.push(szomszedsagiLista[sz][i]);
             }
         }
@@ -85,7 +85,7 @@ int main ()
         }
         if (g > G)
         {
-            g = G;
+            G = g;
         }
     }
     fout << G << endl;
