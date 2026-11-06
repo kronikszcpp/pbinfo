@@ -2,7 +2,7 @@
 #include <fstream>
 #include <climits>
 using namespace std;
-ifstream fin("input.in");
+ifstream fin("dijkstra.in");
 ofstream fout("dijkstra.out");
 int pp[150][150] = {0}, hossz[150], n, m, pont, megtalaltElek = 0;
 bool voltMar[150] = {false};
